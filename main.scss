@@ -1,0 +1,136 @@
+body{
+    background-image: url("images/tile.jpg");
+}
+#headline{
+    font-family: 'Architects Daughter';
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.979);
+    position: relative;
+    margin:0;
+    padding: 0 0.3em;
+    font-weight: bold;
+
+}
+#mainFrame{
+    margin: 0;
+}
+#newNote{
+    background-image: url("images/formbg.jpg");
+    background-size: 450px 550px;
+    background-repeat: no-repeat; 
+    position: relative;
+    height: 550px;
+    width: 450px;
+    textarea{
+        &:lang(en){
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 1.5em;
+        }
+        &:lang(he){
+            direction: rtl;
+            font-family: 'Amatic SC', cursive;
+            font-size: 1.5em;
+        }
+        position: absolute;
+        left: 6%;
+        top: 23%;
+        line-height: 1.8;
+        background: transparent;
+        border: none;
+        // border: 1px solid black;
+        &:focus{
+            border: 0 none #FFF;
+            // overflow: hidden;
+            outline:none;
+        } 
+    }
+    input{
+        position: absolute;
+        top: 88%;
+        left: 6%;
+        max-width: 200px;
+        background: transparent;
+        border: none;
+        &:focus{
+            border: 0 none #FFF;
+            overflow: hidden;
+            outline:none;
+        }
+
+    }
+    img{
+       width: 400px;
+       margin-top: 20px;
+       position: relative;
+
+    }
+    button{
+        position: absolute;
+        top: 88%;
+        left: 290px;
+        width: 60px;
+    }
+
+}
+#notesBoard{
+    margin-top: 3%;
+    display: inline-block;
+}
+
+.notetext{
+    position: absolute;
+    top:50px;
+    left:50px;
+    right:50px;
+    width:200px;
+    height: 187pX;
+    background: transparent;
+    border: none;
+    resize: none;
+    &:focus{
+        border: 0 none #FFF;
+        outline:none;
+    } 
+    
+}
+
+.note{
+    background-image: url("images/notebg.png");
+    background-repeat: no-repeat; 
+    background-size: 300px 300px;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    &:hover .delete{
+        display: block;
+    }
+    
+}
+.delete {
+	position: absolute;
+	right: 10%;
+    top: 10%;
+    font-size: 15px;
+    display: none;
+    border: none;
+
+}
+.date{
+    position: absolute;
+    top: 80%;
+    left:10%;
+}
+.no_opacity{
+     opacity: 0;
+}
+
+#error_message{
+    position: relative;
+    top: 100px;
+    left: 22px;
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: none;
+}

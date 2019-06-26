@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>My Todo List / jhon Bryce</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <p>(c) Sagi Rogozinski</p>
+            <h1 id="headline">My Todo List</h1>
+        </div>
+        <div>
+            <h2>My Task Board</h2>
+        </div>
+        <div id="mainFrame" class="row">
+            <div id="notesBoard" class="col-8">
+                <div id="row1" class="row">
+
+                </div>
+            </div>
+            <div id="newNote" class="col-4">
+                <div class="form-group">
+                    <p id="error_message">Error! Note is empty.</p>
+                    <textarea name="mainText" id="mainText" cols="25" rows="8" onkeypress="clearErrorMessage()"></textarea>
+                    <input class="btn btn-outline-secondary" id="date" type="date" name="taskTime">
+                    <button class="btn btn-outline-secondary" onclick="addNote()">
+                        <i class="fas fa-plus-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
